@@ -1,0 +1,161 @@
+@media screen and (max-width: 1023px) {
+  .banner .logo {
+    width: 200px;
+    height: 87px;
+    margin-left: -100px;
+  }
+  .navigation {
+    right: 0;
+  }
+  .productSection {
+    max-width: 100%;
+  }
+  .productSection ul {
+    text-align: center;
+  }
+  .navigation .logo {
+    position: relative;
+    width: 120px;
+    height: 58px;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    margin: 0;
+    top: -13px;
+    float: left;
+  }
+  .productSection h2 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+} 
+
+@media screen and (max-width: 767px) {
+  .banner .logo {
+    width: 150px;
+    margin-left: -75px;
+    top: 60px;
+  }
+  .banner .logo.appear {
+    top: 50px;
+  }
+  .banner h1 {
+    top: 144px;
+    font-size: 34px;
+  }
+  .navigation .logo {
+    position: relative;
+    width: 120px;
+    height: 58px;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+    margin: 0;
+    top: -13px;
+    float: left;
+  }
+  .inputAreaWrap select, 
+  .inputAreaWrap .inputPlaceholder, 
+  .inputAreaWrap input.locationInput {
+    font-size: 14px;
+    padding: 8px 10px;
+    width: 320px;
+    height: 39px;
+  }
+  .inputAreaWrap {
+    width: 440px;
+  }
+  .inputAreaWrap select {
+    width: 110px;
+  }
+  .productSection {
+    padding: 80px 10px 20px;
+  }
+  .productSection h3 {
+    text-align: center;
+  }
+  .popularSection li {
+    width: 200px;
+    margin: 0 10px 10px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner {
+    background-position: 70% center;
+  }
+  .banner h1 {
+    top: 138px;
+    font-size: 24px;
+  }
+  .locationWrap h3 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .locationWrap {
+    top: 50%;
+  }
+  .locationWrap.appear {
+    top: 46%;
+  }
+  .inputAreaWrap {
+    width: 300px;
+  }
+  .inputAreaWrap select.shiftLeft {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .inputAreaWrap .inputPlaceholder, 
+  .inputAreaWrap input.locationInput {
+    top: 60px;
+    width: 300px;
+    right: auto;
+    left: 50%;
+    transform-origin: center;
+    transform: scale(1) translateX(-50%);
+  }
+  .inputAreaWrap .inputPlaceholder.appear, .inputAreaWrap input.locationInput.appear {
+    transform: scale(1) translateX(-50%);
+    top: 50px;
+  }
+  .productSection {
+    padding: 70px 5px 20px;
+  }
+  .productSection h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .popularSection li {
+    width: 167px;
+    margin: 0 5px 5px 0;
+    font-size: 14px;
+  }
+  .loginSignupWrap.searchActive .loginSignup {
+    opacity: 0;
+  }
+  .navigation.menuActive .logo.hide {
+    opacity: 0;
+    z-index: -1;
+  }
+  .navigation.menuActive .loginSignupWrap.searchActive .productPlaceholer, 
+  .navigation.menuActive .loginSignupWrap.searchActive .productSearchInput,
+  .loginSignupWrap.searchActive .productPlaceholer, 
+  .loginSignupWrap.searchActive .productSearchInput {
+    left: 50%;
+    width: 90%;
+    text-align: left;
+    transform: translateX(-50%);
+  }
+  .navigation.menuActive .icon-search.change, 
+  .loginSignupWrap.searchActive .icon-search {
+    left: 74%;
+}
+
+@media screen and (max-width: 359px) {
+  .popularSection li {
+    width: 46%;
+    line-height: 16px;
+  }
+  .navigation.menuActive .icon-search.change, 
+  .loginSignupWrap.searchActive .icon-search {
+    left: 77%;
+  } 
+}
