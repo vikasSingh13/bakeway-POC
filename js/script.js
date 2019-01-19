@@ -47,6 +47,7 @@ $(document).ready(() => {
   // NOTE: Search product icon click effect 
   $('.js-searchProduct').on('click', (e) => {
     $(e.currentTarget).toggleClass('change');
+    $('.js-banner').toggleClass('active');
     $('.js-righNavWrap').toggleClass('searchActive');
     $('.js-headerLogo').toggleClass('hide');
     $('.js-productPlaceholer').toggleClass('appear');
