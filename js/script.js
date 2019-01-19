@@ -63,6 +63,11 @@ $(document).ready(() => {
 
   // NOTE: Scroll window to cateogry section
   $(window).on('scroll', (e) => {
+    if($(window).scrollTop() > 50) {
+      $('.js-locationWrap, .js-exploreMore').addClass('disappear');
+    }else {
+      $('.js-locationWrap, .js-exploreMore').removeClass('disappear');
+    }
     if($(window).scrollTop() > 300) {
       $(".js-navigation").addClass('menuActive');
     }else {
