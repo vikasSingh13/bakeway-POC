@@ -4,6 +4,7 @@
     height: 87px;
     margin-left: -100px;
   }
+  .innerBanner.active:after,
   .banner.active:before {
     position: fixed;
     content: '';

@@ -26,14 +26,26 @@ $(document).ready(() => {
       setTimeout(() => {
         $('.js-inputPlaceholder').addClass('appear');
         $('.js-locationinput').addClass('appear');
+        $('.js-innerBanner').addClass('active');
       }, 100);
     }else {
+      $('.js-innerBanner').removeClass('active');
       $('.js-locationinput').removeClass('appear');
       $('.js-inputPlaceholder').removeClass('appear');
       setTimeout(() => {
         $(e.currentTarget).removeClass('shiftLeft');
       }, 100);
     }
+  });
+  
+  $('.js-innerBanner').on('click', (e) => {
+    e.stopPropagation();
+    $(e.currentTarget).removeClass('active');
+  });
+
+  $('.js-selectBox, .js-locationinput').on('click', (e) => {
+    e.stopPropagation();
+    $('.js-innerBanner').addClass('active');
   });
 
   $('.js-locationinput').on('keyup', (e) => {
@@ -64,11 +76,6 @@ $(document).ready(() => {
 
   // NOTE: Scroll window to cateogry section
   $(window).on('scroll', (e) => {
-    if($(window).scrollTop() > 50) {
-      $('.js-locationWrap, .js-exploreMore').addClass('disappear');
-    }else {
-      $('.js-locationWrap, .js-exploreMore').removeClass('disappear');
-    }
     if($(window).scrollTop() > 300) {
       $(".js-navigation").addClass('menuActive');
     }else {
